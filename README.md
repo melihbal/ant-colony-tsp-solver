@@ -55,7 +55,7 @@ java -cp .:src:stdlib.jar Main [filename] [showPheromones] [methodID]
     java -cp .:src:stdlib.jar Main input01.txt
     ```
     ```bash
-    java -cp .:src:stdlib.jar Main input02.txt
+    java -cp .:src:stdlib.jar Main input04.txt
     ```
 
 * **Disable Pheromone Rendering (Faster Performance):**
@@ -66,7 +66,7 @@ java -cp .:src:stdlib.jar Main [filename] [showPheromones] [methodID]
 * **Run Brute Force Method (Exact Solution):**
     *Note: Pheromone display must be `false` for Brute Force to prevent visualization conflicts.*
     ```bash
-    java -cp .:src:stdlib.jar Main input04.txt false 1
+    java -cp .:src:stdlib.jar Main input02.txt false 1
     ```
 
 ## Configuration
