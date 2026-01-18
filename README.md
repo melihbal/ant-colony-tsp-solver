@@ -33,7 +33,7 @@ It implements two distinct approaches for comparison:
 ```bash
 javac -cp .:src:stdlib.jar src/*.java
 ```
-*(Note: On Windows, use `;` instead of `:` as the classpath separator).*
+*(Note: On Windows, use `;` instead of `:`).*
 
 ### 2. Run with Different Input Files
 You can run the program on different graph topologies by specifying the input file as the first argument.
