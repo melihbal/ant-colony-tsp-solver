@@ -27,9 +27,71 @@ It implements two distinct approaches for comparison:
 
 ### Prerequisites
 * Java Development Kit (JDK) 8 or higher.
-* `stdlib.jar` (Required for `StdDraw` visualization).
+* `stdlib.jar` (Required for `StdDraw` visualization). Ensure this file is in your project root.
 
 ### 1. Compile
-Ensure `stdlib.jar` is in your root directory or classpath.
 ```bash
 javac -cp .:src:stdlib.jar src/*.java
+```
+*(Note: On Windows, use `;` instead of `:` as the classpath separator).*
+
+### 2. Run with Different Input Files
+You can run the program on different graph topologies by specifying the input file as the first argument.
+
+**Syntax:**
+```bash
+java -cp .:src:stdlib.jar Main [filename] [showPheromones] [methodID]
+```
+
+**Examples:**
+
+* **Run on default file (`input05.txt`):**
+    ```bash
+    java -cp .:src:stdlib.jar Main
+    ```
+
+* **Run on specific files:**
+    ```bash
+    java -cp .:src:stdlib.jar Main input01.txt
+    ```
+    ```bash
+    java -cp .:src:stdlib.jar Main input02.txt
+    ```
+
+* **Disable Pheromone Rendering (Faster Performance):**
+    ```bash
+    java -cp .:src:stdlib.jar Main input03.txt false
+    ```
+
+* **Run Brute Force Method (Exact Solution):**
+    *Note: Pheromone display must be `false` for Brute Force to prevent visualization conflicts.*
+    ```bash
+    java -cp .:src:stdlib.jar Main input04.txt false 1
+    ```
+
+## ⚙️ Configuration
+
+The algorithm's hyperparameters are defined in `Main.java`:
+
+| Parameter | Value | Description |
+| :--- | :--- | :--- |
+| **Alpha ($\alpha$)** | `0.8` | Importance of pheromone trail. |
+| **Beta ($\beta$)** | `7.5` | Importance of heuristic information (distance). |
+| **Evaporation** | `0.9` | Rate at which pheromones decay. |
+| **Ant Count** | `50` | Number of agents per iteration. |
+| **Iterations** | `400` | Total simulation cycles. |
+
+## 📂 Input Format
+
+Input files (e.g., `input05.txt`) must follow this coordinate format (normalized 0.0 to 1.0):
+```text
+0.6550,0.5838
+0.9338,0.4762
+0.8000,0.4500
+...
+```
+Each line represents the `(x, y)` coordinates of a city.
+
+## 📷 Screenshots
+
+*(Add a screenshot of your visualization window here)*
