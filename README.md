@@ -69,7 +69,7 @@ java -cp .:src:stdlib.jar Main [filename] [showPheromones] [methodID]
     java -cp .:src:stdlib.jar Main input04.txt false 1
     ```
 
-## ⚙️ Configuration
+## Configuration
 
 The algorithm's hyperparameters are defined in `Main.java`:
 
@@ -81,7 +81,7 @@ The algorithm's hyperparameters are defined in `Main.java`:
 | **Ant Count** | `50` | Number of agents per iteration. |
 | **Iterations** | `400` | Total simulation cycles. |
 
-## 📂 Input Format
+## Input Format
 
 Input files (e.g., `input05.txt`) must follow this coordinate format (normalized 0.0 to 1.0):
 ```text
@@ -91,7 +91,3 @@ Input files (e.g., `input05.txt`) must follow this coordinate format (normalized
 ...
 ```
 Each line represents the `(x, y)` coordinates of a city.
-
-## 📷 Screenshots
-
-*(Add a screenshot of your visualization window here)*
