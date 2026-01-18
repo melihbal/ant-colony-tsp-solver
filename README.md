@@ -7,7 +7,7 @@ A Java-based implementation of the **Ant Colony Optimization** metaheuristic to 
 This project tackles the classic NP-hard **Traveling Salesperson Problem**, where the goal is to find the shortest possible route that visits every city exactly once and returns to the origin.
 
 It implements two distinct approaches for comparison:
-1.  **Ant Colony Optimization (ACO):** A probabilistic technique simulating the behavior of ants finding paths to food. It uses pheromone deposition and evaporation to converge on an approximate optimal solution.
+1.  **Ant Colony Optimization:** A probabilistic technique simulating the behavior of ants finding paths to food. It uses pheromone deposition and evaporation to converge on an approximate optimal solution.
 2.  **Brute-Force Search:** A deterministic approach that evaluates all possible permutations to find the mathematically perfect solution (feasible only for small $N$).
 
 ## Key Features
