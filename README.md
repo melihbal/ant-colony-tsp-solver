@@ -64,7 +64,7 @@ java -cp .:src:stdlib.jar Main [filename] [showPheromones] [methodID]
     ```
 
 * **Run Brute Force Method (Exact Solution):**
-    *Note: Pheromone display must be `false` for Brute Force to prevent visualization conflicts.*
+    *Note: Pheromone display must be `false` for Brute Force as utilizes a different approach.*
     ```bash
     java -cp .:src:stdlib.jar Main input02.txt false 1
     ```
