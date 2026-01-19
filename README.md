@@ -43,7 +43,7 @@ You can run the program on different graph topologies by specifying the input fi
 java -cp .:src:stdlib.jar Main [filename] [showPheromones] [methodID]
 ```
 
-*(Note: Input files are located in the inputs/ directory, but you can reference them directly by name (e.g., input01.txt) when running the program.)
+*(Note: Input files are located in the inputs/ directory, but you can reference them directly by name (e.g., input01.txt) when running the program.)*
 
 **Examples:**
 
