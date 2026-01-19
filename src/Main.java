@@ -3,6 +3,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.List;
+import java.io.File;
 
 /**
  * Solves the Traveling Salesperson Problem (TSP) using either:
@@ -24,6 +25,15 @@ public class Main {
 
         // Input Filename
         String filename = (args.length > 0) ? args[0] : "input05.txt";
+
+        // Smart Check: If file doesn't exist, try looking in 'inputs/'
+        File fileCheck = new File(filename);
+        if (!fileCheck.exists()) {
+            File inputFolderCheck = new File("inputs/" + filename);
+            if (inputFolderCheck.exists()) {
+                filename = "inputs/" + filename;
+            }
+        }
 
         // Visualization Toggle, Default: true
         boolean pheromoneDisplay = true;
